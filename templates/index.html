@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+
+</style>
+  </head>
+  
+  
+  <body>
+    
+    <!-- header -->
+
+<div class="header">
+  <a href="#default" class="logo" style="color:#9494b8">HEALTH BOT</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+  </div>
+</div>
+    
+<div class="row">
+  <!--data column-->
+  <div class="column left" style="background-color:#f0f0f5;">
+    <h2></h2>
+   <p>The purpose of this project is to create Remote Health Bot To help Diagonose symptoms of a patient The Bot will also help Book appointments with Doctors It is currently under Development</p>
+  </div>
+  
+  <!--bot column-->
+  <div class="column middle">
+    <h3 class="text">PERSONAL HEALTH ASSISTANT</h3>
+    <div>
+      
+      <div id="chatbox">
+        <p class="botText">
+           <span>I am your Doctor, How can I help You?.</span>
+        </p>
+  
+      </div>
+      <div id="userInput">
+        <input id="textInput" type="text" name="msg" placeholder="Message">
+        <input id="buttonInput" type="submit" value="Send">
+      </div>
+      <script>
+        function getBotResponse() {
+          var rawText = $("#textInput").val();
+          var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+          document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          $.get("/get", { msg: rawText }).done(function(data) {
+            var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          });
+        }
+        $("#textInput").keypress(function(e) {
+            if(e.which == 13) {
+                getBotResponse();
+            }
+        });
+        $("#buttonInput").click(function() {
+          getBotResponse();
+        })
+      </script>
+    </div>
+  </div>
+  
+  
+  <!--request home service-->
+  <div class="column right">
+    <div class="form-popup" id="myForm">
+  <form action=" " class="form-container">
+    <h3>Request For Home Health Service</h3>
+
+    <label for="user"><b>NAME</b></label>
+    <input type="text" placeholder="Enter Name" name="user" required>
+    
+    <label for="contact"><b>Contact</b></label>
+    <input type="text" placeholder="Enter Contact" name="contact" required>
+
+    <label for="location"><b>Location</b></label>
+    <input type="text" placeholder="Enter Loctaion" name="location" required>
+
+    <button type="submit" class="btn">REQUEST</button>
+  </form>
+</div>
+  </div>
+</div>
+
+    <!--footer-->
+    
+    <div class="footer">
+  <p>Develop by TEAM RAJJ</p>
+  <p>Global Code 2019</p>
+</div>
+    
+  </body>
+</html>
