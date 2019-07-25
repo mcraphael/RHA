@@ -1,6 +1,6 @@
-bot : Hi There! I am a Health Assistant chatbot. You can begin conversation by typing in a message and pressing enter.
+bot : Hi There! I am a medical chatbot. You can begin conversation by typing in a message and pressing enter.
 user : where are you
-bot : - I am offline at Fortress Hostel Room 7 Ho Technical University Campus as at now
+bot : - I am offline. at Fortress Hostel Room 7 Ho Technical University Campus as at now
 user : are you online
 bot : - no i am completely offline
 user : where 

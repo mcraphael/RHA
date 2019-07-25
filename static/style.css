@@ -1,5 +1,10 @@
 body {
     font-family: Garamond;
+
+}
+
+
+*{
 }
 
 .header {
@@ -87,6 +92,7 @@ h3 {
     margin-right: auto;
     width: 40%;
     margin-top: 10px;
+    background-color: #cccccc;
 }
 
 #userInput {
@@ -116,6 +122,7 @@ h3 {
     font-size: 17px;
     text-align: right;
     line-height: 30px;
+    border: 1px solid green;
 }
 
 .userText span {
@@ -130,7 +137,7 @@ h3 {
     font-size: 17px;
     text-align: left;
     line-height: 30px;
-    
+    border: 1px solid green;
 }
 
 .botText span {
@@ -162,6 +169,7 @@ h3 {
 .left, .right {
   width: 30%;
   height: 100%;
+  border-left: 3px solid black;
 }
 
 .middle {

@@ -1,9 +1,9 @@
 bot : Hi There! I am a medical chatbot. You can begin conversation by typing in a message and pressing enter.
-user : my name is Johnson
+user : my name is atulya
 bot : - Hello! your name has been stored. What is your age?
 user : my age is 20
 bot : - okay. your age has been stored. Which city do you live in?
-user : i live in Accra
+user : i live in mumbai
 bot : - okay location stored. Welcome to medical portal. Say Hi!
 user : Hi
 bot : - Hello. How are you feeling today?
@@ -17,7 +17,7 @@ user : yes i'd like to talk to a doctor
 bot : - you shall be called once the doctor is available. Do you want to book an appointment?
 user : yes book an appointment for me
 bot : - yes please state time and doctor's name in the following format; 'Patient Name: Date: Doctor: Hospital:'
-user : Patient Name: Johnson Date: 05.03.17 Doctor: Trafalgar Hospital: Dr james
+user : Patient Name: Atulya Date: 05.03.17 Doctor: Yogesh Hospital: Hiranandani
 bot : - appointment details saved. you shall be contacted shortly.
 user : thanks
 bot : - happy to help!

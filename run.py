@@ -13,8 +13,8 @@ file.write('bot : Hi There! I am a medical chatbot. You can begin conversation b
 file.close()
 
 app = Flask(__name__)
-
-
+                                         
+                                              
 english_bot = ChatBot('Bot',
              storage_adapter='chatterbot.storage.SQLStorageAdapter',
              logic_adapters=[
@@ -29,6 +29,11 @@ english_bot.set_trainer(ListTrainer)
 @app.route("/")
 def home():
     return render_template("index.html")
+                                                                                                                                                                    
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 
 @app.route("/get")
 def get_bot_response():
