@@ -9,6 +9,16 @@ some of the challenges faced as a team were
 
 The Following are the Big minds behind this great Idea or Remote Health Assitant Bot(RHA)
 
+
+TECHNOLOGIES 
+
+1. Flask
+2. Python3
+3. Html/Css
+4. JavaScript 
+5. Sql Lite3
+
+
       Team RAJJ
 1. Bekoe Fred Kwesi
 2. Gbordzoe Joyland
