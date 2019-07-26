@@ -1,3 +1,7 @@
 bot : Hi There! I am a medical chatbot. You can begin conversation by typing in a message and pressing enter.
 user : hi
 bot : - Hello. How are you feeling today?
+user : feeling sick
+bot : - okay. can you tell me what's wrong? what are your symptoms?
+user : have stomach pains
+bot : - okay, did you get hurt, or it is a suddern aching.

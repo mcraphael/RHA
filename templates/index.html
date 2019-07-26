@@ -9,39 +9,37 @@
   </head>
   
   
-  <body class="body">
+  <body >
     
     <!-- header -->
 
 <div class="header">
-  <a href="#default" class="logo" style="color:#9494b8">HEALTH BOT</a>
+  <a href="#default" class="logo">HEALTH BOT</a>
   <div class="header-right">
     <a class="active" href="#">Home</a>
     <a href="/about">About</a>
   </div>
 </div>
     
-<div class="row">
-  <!--data column-->
-  <div class="column left" style="background-color:#f0f0f5;">
-    <h2></h2>
-   <p>The purpose of this project is to create Remote Health Bot To help Diagonose symptoms of a patient The Bot will also help Book appointments with Doctors It is currently under Development</p>
-  </div>
+ <center> <h3 class="text">PERSONAL HEALTH ASSISTANT</h3> </center>
   
   <!--bot column-->
-  <div class="column middle">
-    <h3 class="text">PERSONAL HEALTH ASSISTANT</h3>
-    <div>
-      
+
+  <div id="container">
+    
+   
+    
       <div id="chatbox">
         <p class="botText">
            <span>I am your Doctor, How can I help You?.</span>
         </p>
-  
-      </div>
-      <div id="userInput">
+    </div>
+    
+     <div id="userInput">
         <input id="textInput" type="text" name="msg" placeholder="Message">
         <input id="buttonInput" type="submit" value="Send">
+      
+
       </div>
       <script>
         function getBotResponse() {
@@ -65,31 +63,8 @@
           getBotResponse();
         })
       </script>
-    </div>
+   
   </div>
-  
-  
-  <!--request home service-->
-  <div class="column right">
-    <div class="form-popup" id="myForm">
-  <form action=" " class="form-container">
-    <h3>Request For Home Health Service</h3>
-
-    <label for="user"><b>NAME</b></label>
-    <input type="text" placeholder="Enter Name" name="user" required>
-    
-    <label for="contact"><b>Contact</b></label>
-    <input type="text" placeholder="Enter Contact" name="contact" required>
-
-    <label for="location"><b>Location</b></label>
-    <input type="text" placeholder="Enter Loctaion" name="location" required>
-
-    <button type="submit" class="btn">REQUEST</button>
-  </form>
-</div>
-  </div>
-</div>
-
     <!--footer-->
     
     <div class="footer">

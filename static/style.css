@@ -1,22 +1,32 @@
 body {
     font-family: Garamond;
-
-}
-
-
-*{
+   background:lightgrey;
+   margin:0;
 }
 
 .header {
   overflow: hidden;
-  background-color:#70db70;
   padding: 7px 7px;
   border-style: solid;
   border-width: 0px;
   border-color: #FF0000;
   height: 68px;
-  
+  width:100%;
+  background-color: darkred;
+ 
+
 }
+
+.header a.logo{
+  color:white;
+  font-family:arial;
+
+}
+
+.header a.logo:hover{
+background: transparent;
+color: orange;}
+
 
 /* Style the header links */
 .header a {
@@ -92,7 +102,7 @@ h3 {
     margin-right: auto;
     width: 40%;
     margin-top: 10px;
-    background-color: #cccccc;
+    
 }
 
 #userInput {
@@ -122,7 +132,7 @@ h3 {
     font-size: 17px;
     text-align: right;
     line-height: 30px;
-    border: 1px solid green;
+   
 }
 
 .userText span {
@@ -137,13 +147,14 @@ h3 {
     font-size: 17px;
     text-align: left;
     line-height: 30px;
-    border: 1px solid green;
+    
 }
 
 .botText span {
     background-color:#EF5350;
     padding: 10px;
     border-radius: 2px;
+    
   
 }
 
@@ -162,15 +173,11 @@ h3 {
 .column {
   float: left;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
   margin-top: 20px;
 }
 
-.left, .right {
-  width: 30%;
-  height: 100%;
-  border-left: 3px solid black;
-}
+
+
 
 .middle {
   width: 40%;
@@ -226,13 +233,31 @@ h3 {
   opacity: 1;
 }
 
+#container{
+overflow:scroll;
+border-radius:20px;
+width:70%;
+height:400px;
+margin-left:150px;
+margin-top:20px;
+background-color:white;
+
+
+}
+
+
+
 
 
 /*footer*/
 
 .footer {
-  padding: 10px;
-  text-align: center;
-  background: #ddd; 
-  margin: 0px;
+  position:fixed;
+  
+  bottom:0;
+  width:100%;
+  background:darkred;
+  color:white;
+  text-align:center;
+  
 }
